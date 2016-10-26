@@ -1,0 +1,41 @@
+.wrapper {
+    max-width: 1280px;
+    min-width: 1024px;
+    background-color: #FFFFFF;
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    margin: 0 auto -150px;
+}
+
+.header {
+    width: 968px;
+    margin: 0px auto;
+    height: 150px;
+}
+
+.header .navigation {
+    font-size: 14px;
+    float: right;
+    margin-top: 100px;
+    color: #98A1AA;
+}
+
+.header .navigation ul {
+    display: block;
+    float: left;
+    padding: 0 20px 0 20px;
+}
+
+.header .navigation ul li.main {
+    font-family: 'OpenSansSemibold';
+    padding-bottom: 20px;
+}
+
+.header .navigation ul li.option {
+    opacity: 0;
+}
+
+.header .navigation ul:hover li.option{
+  opacity: 100;
+}

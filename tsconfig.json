@@ -1,0 +1,20 @@
+{
+  "compileOnSave":  true,
+  "compilerOptions": {
+    "noImplicitAny": false,
+    "noEmitOnError": true,
+    "removeComments": false,
+    "sourceMap": true,
+    "target": "es5",
+    "module": "system",
+    "jsx": "react",
+    "experimentalDecorators": true,
+    "outDir": "build"
+  },
+  "exclude": [
+    "typings",
+    "node_modules",
+    "jspm_packages",
+    "wwwroot"
+  ]
+}

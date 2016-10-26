@@ -1,0 +1,23 @@
+{
+  "jspm": {
+    "dependencies": {
+      "es6-shim": "github:es-shims/es6-shim@^0.35.1",
+      "history": "npm:history@^4.3.0",
+      "immutable": "npm:immutable@^3.8.1",
+      "react": "npm:react@^15.3.2",
+      "react-dom": "npm:react-dom@^15.3.2",
+      "react-redux": "npm:react-redux@^4.4.5",
+      "react-router": "npm:react-router@^2.8.1",
+      "redux": "npm:redux@^3.6.0"
+    },
+    "devDependencies": {
+      "babel": "npm:babel-core@^5.8.24",
+      "babel-runtime": "npm:babel-runtime@^5.8.24",
+      "core-js": "npm:core-js@^1.1.4"
+    }
+  },
+  "scripts": {
+    "start": "node index.js"
+  },
+  "devDependencies": {}
+}
