@@ -32,7 +32,7 @@ export class Navigation extends React.Component<any, any> {
           </ul>
           <ul>
             <li className="main">
-              <Link to="/decal/about">DECAL</Link>
+              <Link to="/decal">DECAL</Link>
             </li>
             <li className="option">
               <Link to="/decal/hope">H.O.P.E</Link>
@@ -49,7 +49,7 @@ export class Navigation extends React.Component<any, any> {
           
           <ul>
             <li className="main">
-              <Link to="/donate">Donate</Link>
+              <Link to="/donate">DONATE</Link>
             </li>
           </ul>
         </div>

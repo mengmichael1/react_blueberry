@@ -2,13 +2,14 @@
 
 import * as React from 'react';
 import { connect } from 'react-redux';
+import {Navigation} from './navigation';
 
 @connect(
   (state) => ({}),
   (dispatch) => ({})
 )
 
-export class About extends React.Component<any, any> {
+export class Dashboard extends React.Component<any, any> {
     constructor(props) {
         super(props);
     }
@@ -16,7 +17,8 @@ export class About extends React.Component<any, any> {
     render() {
         return (
             <div>
-            <h1>About</h1>
+            <Navigation />
+            {this.props.children}
             </div>
         );
     }

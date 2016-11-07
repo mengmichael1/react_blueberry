@@ -8,7 +8,7 @@ import { connect } from 'react-redux';
   (dispatch) => ({})
 )
 
-export class About extends React.Component<any, any> {
+export class Micromouse extends React.Component<any, any> {
     constructor(props) {
         super(props);
     }
@@ -16,7 +16,7 @@ export class About extends React.Component<any, any> {
     render() {
         return (
             <div>
-            <h1>About</h1>
+            <h1>Micromouse</h1>
             </div>
         );
     }

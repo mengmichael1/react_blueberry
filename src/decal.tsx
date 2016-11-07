@@ -2,42 +2,33 @@
 
 import * as React from 'react';
 import { connect } from 'react-redux';
-import {Navigation} from './navigation';
 
 @connect(
-  (state) => ({subPage: state.decal}),
-  (dispatch) => ({
-    nav: (url) => {
-      let action = { type: 'NAV', parent: "decal", page: url }; 
-      dispatch(action);
-    }
-  })
+  (state) => ({}),
+  (dispatch) => ({})
 )
 
 export class Decal extends React.Component<any, any> {
     constructor(props) {
         super(props);
     }
-
-    componentWillMount() {
-        if (this.props.subPage != "default" && !this.props.params.page)
-            this.props.nav(this.props.subPage)
-        else
-            this.props.nav(this.props.params.page || "default");
-    }
-
-    componentDidUpdate() {
-        if (this.props.subPage != "default" && !this.props.params.page)
-            this.props.nav(this.props.subPage)
-        else
-            this.props.nav(this.props.params.page || "default");
+    
+    getAboutText() {
+        return (
+            <div>
+                <h1>Decal</h1>
+                <p>
+                    IEEE at Berkeley hosts two decals, Micromouse and Hands On Practical Electronics (H.O.P.E)
+                </p>
+            </div>
+            
+        )
     }
 
     render() {
         return (
             <div>
-            <Navigation />
-            <h1>{this.props.subPage}</h1>
+                {this.props.children ? this.props.children : this.getAboutText()}
             </div>
         );
     }
