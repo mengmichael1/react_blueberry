@@ -11,11 +11,11 @@ import {Dashboard} from './dashboard';
 import {Homepage} from './homepage';
 import {Events} from './events';
 import {Industry} from './industry';
-import {Decal} from './decal';
+import {Decal} from './decal/decal';
 import {About} from './about';
 import {Donate} from './donate';
-import {Hope} from './hope';
-import {Micromouse} from './micromouse';
+import {Hope, HopeFaq, HopeResources, HopeArchive} from './decal/hope';
+import {Micromouse} from './decal/micromouse';
 
 import {Navigation} from './navigation';
 
@@ -34,7 +34,11 @@ ReactDOM.render(
 							<Route path="events(/:page)" component={Events} />
 							<Route path="industry(/:page)" component={Industry}/>
 							<Route path="decal(:/page)" component={Decal}>
-								<Route path="hope" component={Hope} />
+								<Route path="hope(:/page)" component={Hope}>
+									<Route path="faq" component={HopeFaq} />
+									<Route path="resources" component={HopeResources} />
+									<Route path="archive" component={HopeArchive} />
+								</Route>
 								<Route path="micromouse" component={Micromouse} />
 							</Route>
 							<Route path="about(/:page)" component={About} />
