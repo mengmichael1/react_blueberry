@@ -36,9 +36,15 @@ export class Industry extends React.Component<any, any> {
     render() {
         return (
             <div>
-            <Navigation />
-            <h1>{this.props.subPage}</h1>
+                <Navigation />
+                <h1>{this.props.subPage}</h1>
+            
+                <div>
+                    <h2>test</h2>
+                </div>
+            
             </div>
+
         );
     }
 }

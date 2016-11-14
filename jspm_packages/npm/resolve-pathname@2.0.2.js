@@ -1,0 +1,1 @@
+module.exports = require("npm:resolve-pathname@2.0.2/index");
