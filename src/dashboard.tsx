@@ -2,13 +2,14 @@
 
 import * as React from 'react';
 import { connect } from 'react-redux';
+import {Navigation} from './navigation';
 
 @connect(
   (state) => ({}),
   (dispatch) => ({})
 )
 
-export class Industry extends React.Component<any, any> {
+export class Dashboard extends React.Component<any, any> {
     constructor(props) {
         super(props);
     }
@@ -16,14 +17,9 @@ export class Industry extends React.Component<any, any> {
     render() {
         return (
             <div>
-                <Navigation />
-                <h1>{this.props.subPage}</h1>
-            
-                <div>
-                    <h2>test</h2>
-                </div>
+            <Navigation />
+            {this.props.children}
             </div>
-
         );
     }
 }

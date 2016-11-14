@@ -9,7 +9,8 @@ app.use(express.static(__dirname))
 // handle every other route with index.html, which will contain
 // a script tag to your application's JavaScript file(s).
 app.get('*',function (req, res) {
-    res.redirect('/');
+    // res.redirect('/');
+    res.sendFile(path.resolve(__dirname, 'index.html'))
 });
 
 app.listen(port)
